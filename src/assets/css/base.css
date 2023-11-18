@@ -1,4 +1,12 @@
+:root {
+	--color-accent: oklch(70% 0.217 33.88);
+}
+
 body {
 	font-family: system-ui, "Apple Color Emoji", "Segoe UI Emoji",
 		"Segoe UI Symbol", "Noto Color Emoji";
+}
+
+h1 {
+	color: var(--color-accent);
 }
