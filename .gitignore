@@ -1,0 +1,13 @@
+.DS_Store
+
+/node_modules
+/_site
+
+yarn-error.log
+
+.env
+
+.npm
+.cache
+.vscode
+.vite
