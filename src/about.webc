@@ -1,9 +1,8 @@
 ---
-layout: layouts/base.njk
 title: About
+tags: page
 ---
 
 <h1>About</h1>
-
 
 <copyright></copyright>

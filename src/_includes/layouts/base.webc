@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title @text="title"></title>
+
+		<script type="module" src="/assets/js/main.js" webc:keep></script>
+		<script type="module" :src="getBundleFileUrl('js')" webc:keep></script>
+		<link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
+	</head>
+	<body>
+		<main @raw="content"></main>
+	</body>
+</html>
