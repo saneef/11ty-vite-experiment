@@ -1,0 +1,17 @@
+<p class="copyright">&copy; <template @html="year()" webc:nokeep></template> Example.com</p>
+
+<style>
+	.copyright {
+		font-weight: bold;
+	}
+</style>
+
+<script>
+	console.log('Hello from <copyright>')
+</script>
+
+<script webc:setup>
+function year() {
+	return new Date().getFullYear();
+}
+</script>

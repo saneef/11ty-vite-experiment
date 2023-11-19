@@ -2,10 +2,11 @@
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const browserslist = require("browserslist");
 const { browserslistToTargets } = require("lightningcss");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 module.exports = function (eleventyConfig) {
-	eleventyConfig.addPassthroughCopy("src/assets");
+	eleventyConfig.addPlugin(pluginWebc);
 	eleventyConfig.addPlugin(EleventyVitePlugin, {
 		viteOptions: {
 			css: {
@@ -19,6 +20,8 @@ module.exports = function (eleventyConfig) {
 			},
 		},
 	});
+
+	eleventyConfig.addPassthroughCopy("src/assets");
 
 	return {
 		dir: {

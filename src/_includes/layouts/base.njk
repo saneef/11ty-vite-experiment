@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ title }}</title>
+
+	<script type="module" src="/assets/js/main.js"></script>
+	<script type="module" src="{% getBundleFileUrl 'js' %}"></script>
+
+	<link rel="stylesheet" href="{% getBundleFileUrl 'css' %}">
 </head>
 <body>
 	<main id="main">
@@ -11,6 +16,6 @@
 			{{ content | safe }}
 		{% endblock %}
 	</main>
-	<script type="module" src="/assets/js/main.js"></script>
+
 </body>
 </html>
